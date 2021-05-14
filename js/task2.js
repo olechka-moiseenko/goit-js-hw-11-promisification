@@ -32,7 +32,7 @@ const users = [
     resolve(updatedUsers);
   }); 
   };
- 
+  const logger2 = updatedUsers => console.table(updatedUsers);
   //  * Должно работать 
   //  */
   toggleUserState(users, 'Mango').then(logger2);
